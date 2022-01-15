@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var nombre1 = "Charlie";
+      var nombre2 = "Marisa";
+      var contraseña1 = "marisa29";
+      var contraseña2 = "maryte";
+
+      var mensaje = function saludo(nombre1, nombre2) {
+        return "Hola" + " " + arguments[0] + " " + "y" + " " + arguments[1];
+      };
+
+      document.write(mensaje(nombre1, nombre2));
+      document.write("<br>");
+
+      document.write("<br>");
+      var nombre = "Charlie";
+      var contraseña = "marisa29";
+      if (nombre === nombre1 && contraseña === contraseña1) {
+        document.write("Bienvenido" + " " + nombre1);
+      } else if (nombre === nombre2 && contraseña === contraseña2) {
+        document.write("Bienvenida" + " " + nombre2);
+      } else {
+        document.write("Acceso Denegado");
+      }
+      document.write("<br>");
+
+      document.write("<br>");
+      var dias = [
+        "Lunes",
+        "Martes",
+        "Miercoles",
+        "Jueves",
+        "Viernes",
+        "Sabado",
+        "Domingo",
+      ];
+      for (i = 0; i < dias.length; i++) {
+        document.write(dias[i] + " / Array" + "<br>");
+      }
+      document.write("<br>");
+
+      document.write("<br>");
+      var semana = {
+        dia1: "Lunes",
+        dia2: "Martes",
+        dia3: "Miercoles",
+        dia4: "Jueves",
+        dia5: "Viernes",
+        dia6: "Sabado",
+        dia7: "Domingo",
+      };
+      for (i in semana) {
+        document.write(semana[i] + " / Objeto" + "<br>");
+      }
+      document.write("<br>");
+
+      document.write("<br>");
+      class usuario {
+        constructor (usuario1, usuario2){
+        this.usuario1 = usuario1;
+        this.usuario2 = usuario2;
+        }
+      }
+
+      var usuarios = new usuario (nombre1, nombre2)
+      document.write (usuarios.usuario1 + " / "
+      + usuarios.usuario2 + " / Estos son Tipo Clase")  
+      document.write("<br>");
+      
+      document.write("<br>");
+      
+      
+      
+      document.write(despedida)
+
+    </script>
+  </body>
+</html>
