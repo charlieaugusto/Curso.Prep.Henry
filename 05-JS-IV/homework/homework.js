@@ -85,12 +85,12 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  // return objeto.hasOwnProperty(propiedad);
   if(objeto[propiedad]) {
     return true;
   } else {
       return false;
 }
-// return objeto.hasOwnProperty(propiedad);
 }
 
 function verificarPassword(usuario, password) {
